@@ -1,10 +1,10 @@
-# coding: utf-8
+# coding=utf-8
 from pynn.request import Request
 from pynn.exception import ArgumentException
 
 class Wrapper:
     def __init__(self):
-        self.request = Request
+        self.request = Request()
 
     def getGuildList(self):
         data = {

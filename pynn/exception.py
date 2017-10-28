@@ -1,4 +1,4 @@
-# coding: utf-8
+# coding=utf-8
 
 class APIError(Exception):
     def __init__(self, message):

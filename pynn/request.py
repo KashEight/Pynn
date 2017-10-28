@@ -1,4 +1,4 @@
-# coding: utf-8
+# coding=utf-8
 import requests
 from pynn.exception import APIError
 
@@ -10,7 +10,7 @@ class Request:
 
     def __call(self, url, header):
         try:
-            response = requests.get(url, header=header, timeout=self.timeout)
+            response = requests.get(url, headers=header, timeout=self.timeout)
             if response.status_code != 200:
                 raise APIError("API returned `{}`. Response was `{}`.".format(response.status_code, response.text))
         except requests.exceptions.Timeout:
