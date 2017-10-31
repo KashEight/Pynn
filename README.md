@@ -7,7 +7,7 @@ from pynn import Pynn
 client = Pynn()
 ```
 All responses is "JSON" format.  
-The details are written at [here]("https://forums.wynncraft.com/threads/wynncraft-public-api.127085/").
+The details are written at [here](https://forums.wynncraft.com/threads/wynncraft-public-api.127085/).
 
 ## Requests
 ```
