@@ -38,16 +38,18 @@ class Wrapper:
         }
         return self.request.WynncraftAPI(data)
 
-    def getItemDB(self, **kwargs):
+    def getItemDB(self, category=None, search=None):
         data = {
             "action": "itemDB"
         }
-        if "category" in kwargs:
-            data["category"] = kwargs["category"]
-        elif "search" in kwargs:
-            data["search"] = kwargs["search"]
-        else:
-            raise ArgumentException("Illegal args: {}".format(args for args in kwargs))
+        if not (category and search):
+            raise ArgumentException("There is no argument in category and search.")
+        elif category and search:
+            raise ArgumentException("Select argument either, category or search.")
+        elif category:
+            data["category"] = category
+        elif search:
+            data["search"] = search
         return self.request.WynncraftAPI(data)
 
     def getStatsLead(self, type, timeframe):
