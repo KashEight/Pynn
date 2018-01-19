@@ -1,6 +1,6 @@
 # coding=utf-8
 import requests
-from pynn.exception import APIError
+from .exception import APIError
 
 class Request:
 

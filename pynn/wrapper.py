@@ -1,6 +1,6 @@
 # coding=utf-8
-from pynn.request import Request
-from pynn.exception import ArgumentException
+from .request import Request
+from .exception import ArgumentException
 
 class Wrapper:
     def __init__(self):
