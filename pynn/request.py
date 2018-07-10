@@ -1,11 +1,13 @@
-# coding=utf-8
+# coding: utf-8
+
 import requests
 from .exception import APIError
+
 
 class Request:
 
     baseUrl = "http://api.wynncraft.com/public_api.php?"
-    userAgent = "Pynn/1.0 (Wynncraft API wrapper for Python; https://github.com/KashEight/Pynn)"
+    userAgent = "Pynn/1.0 (Wynncraft API wrapper for Python: https://github.com/KashEight/Pynn)"
     timeout = 10
 
     def __call(self, url, header):

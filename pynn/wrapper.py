@@ -1,6 +1,8 @@
-# coding=utf-8
+# coding: utf-8
+
 from .request import Request
 from .exception import ArgumentException
+
 
 class Wrapper:
     def __init__(self):

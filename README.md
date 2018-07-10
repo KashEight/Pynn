@@ -1,7 +1,7 @@
 # Introduction
 Wynncraft API wrapper for Python3  
 
-# How to use
+# Usage
 ```
 from pynn import Pynn
 client = Pynn()
